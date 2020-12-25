@@ -27,10 +27,15 @@ void main()
     // 0. above is same as  "int arr[] = {10, 20, 30, 40, 0, 0}"
 
     //Array initialization and printing using for loop
-    printf("Address and values of elements stored in array \n");
+    printf("\nAddress and values of elements stored in array \n");
     int arr[5] = {10,30,20,40,60};
     for(int i = 0; i < 5; i++){
         printf("arr[%d] address : %p\t", i, &arr[i]);
         printf("value : %d\n", arr[i]);
+    }
+    printf("\nPrinting same array data above using other method \n");
+    for(int i = 0; i < 5; i++){
+        printf("arr[%d] address : %p\t", i, &i[arr]);
+        printf("value : %d\n", i[arr]);
     }
 }
